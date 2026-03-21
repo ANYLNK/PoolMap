@@ -47,6 +47,7 @@ PVOID ShellcodeInject(HANDLE hProcess, unsigned char* shellcode, SIZE_T shellcod
 	return RemoteSectionAddress;
 }
 
+/*
 BOOL AdjustToken() {
     std::cout << "[0]Adjust Process Token for Injection." << std::endl;
     HANDLE hToken;
@@ -82,6 +83,7 @@ BOOL AdjustToken() {
     CloseHandle(hToken);
     return TRUE;
 }
+*/
 
 HANDLE HijackThreadPoolRelatedHandle(wstring ObjectType, HANDLE hProcess, DWORD dwDesiredAccess) {
     std::cout << "[O]Try to duplicate Host Process Handle" << std::endl;

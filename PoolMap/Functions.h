@@ -3,7 +3,7 @@
 #include "PoolStruct.h"
 
 PVOID ShellcodeInject(HANDLE hProcess, unsigned char* shellcode, SIZE_T shellcodesize);
-BOOL AdjustToken();
+//BOOL AdjustToken();
 HANDLE HijackThreadPoolRelatedHandle(std::wstring ObjectType, HANDLE hProcess, DWORD dwDesiredAccess);
 BOOL TpWaitInsert(PVOID shellcodeaddress, HANDLE hProcess, HANDLE hIoCompletion);
 BOOL TpIoInsert(PVOID shellcodeaddress, HANDLE hProcess, HANDLE hIoCompletion);
