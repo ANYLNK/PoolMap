@@ -9,11 +9,12 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 	
+	/*
 	if (AdjustToken() == FALSE) {
 		cerr << "[-]Get SeDebug Priviledge Failed, Run as admin may help." << endl;
 		return -1;
 	}
-
+	*/
 	WCHAR HostProcess[] = L"C:\\Windows\\System32\\cmd.exe";
 	LPSTARTUPINFOW startinf = new STARTUPINFOW();
 	LPPROCESS_INFORMATION procinf = new PROCESS_INFORMATION();
